@@ -1,0 +1,140 @@
+#   ***********     MNR0 (Monero Hardware Wallet)       ***************
+#
+#       File:       MNR0/Sources/pcf/iCE40LP8k_cm81.pcf
+#
+#       Purpose:    Physical Constraint File
+#
+#   *******************************************************************
+#
+#   Copyright (c) 2017 by kamminke <kamminke@posteo.ee>
+#   All rights reserved.
+#
+#   Redistribution and use in souce and binary form, with or without
+#   modification, are permitted provided that the following conditions are met:
+#
+#   * Redistributions of souce code must retain the above copyright notice, this
+#     list of conditions and the following disclaimer.
+#
+#   * Redistributions of binary form must reproduce the above copyright notice,
+#     this list of conditions and the following disclaimer in the documentation
+#     and/or other materials provided with the distribution.
+#
+#   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+#   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+#   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PRUPOSE ARE
+#   DISCLAINED. IN  NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+#   FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+#   DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SBSTITUTE GOODS OR
+#   SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+#   CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+#   OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+#   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+#   -------------------------------------------------------------------
+#                           MODULE
+#   -------------------------------------------------------------------
+
+
+
+    #   --------    Bank 0  ------------------------
+
+    set_io          IOT_224,                A1
+    set_io          IOT_221,                A2
+    set_io          IOT_217,                A3
+    set_io          IOT_208,                A4
+    set_io          IOT_185,                A6
+    set_io          IOT_177,                A7
+    set_io          IOT_174,                A8
+    //
+    set_io          IOT_218,                B3
+    set_io          IOT_211,                B4
+    set_io          IOT_188,                B5
+    set_io          IOT_183,                B6
+    set_io          IOT_180,                B7
+    set_io          IOT_170,                B8
+    //
+    set_io          IOT_198_GBIN0,          C4
+    set_io          IOT_197_GBIN1,          C5
+    //
+    set_io          IOT_212,                D5
+    //
+    set_io          IOT_214,                E5
+
+    //  --------    Bank 1  ------------------------
+
+    set_io          IOR_116,                A9
+    //
+    set_io          IOR_120,                B9
+    //
+    set_io          IOR_148,                C9
+    //
+    set_io          IOR_115,                D6
+    set_io          IOR_117,                D7
+    set_io          IOR_141_GBIN2,          D8
+    set_io          IOR_119,                D9
+    //
+    set_io          IOR_118,                E7
+    set_io          IOR_140_GBIN3,          E8
+    //
+    set_io          IOR_113,                F8
+    //
+    set_io          IOR_114,                G8
+    set_io          IOR_112,                G9
+    //
+    set_io          IOR_111,                H9
+    //
+    set_io          IOR_109,                J8
+    set_io          IOR_110,                J9
+
+    //  --------    Bank 2  ------------------------
+
+    //set_io        CDONE,                  E6
+    //
+    set_io          IOB_81_GBIN5,           G4
+    set_io          IOB_103_CBSEL0,         G5
+    //
+    set_io          IOB_54,                 H1
+    set_io          IOB_82_GBIN4,           H4
+    set_io          IOB_104_CBSEL1,         H5
+    set_io          CRESET_B,               H6
+    //
+    set_io          IOB_55,                 J1
+    set_io          IOB_56,                 J2
+    set_io          IOB_57,                 J3
+    set_io          IOB_70,                 J4
+
+    //  --------    Bank 3  ------------------------
+
+    set_io          IOL_3A,                 B1
+    set_io          IOL_2B,                 B2
+    //
+    set_io          IOL_3B,                 C1
+    set_io          IOL_2A,                 C2
+    set_io          IOL_7B,                 C3
+    //
+    set_io          IOL_10A,                D1
+    set_io          IOL_7A,                 D2
+    set_io          IOL_13B_GBIN7,          D3
+    //
+    set_io          IOL_10B,                E1
+    set_io          IOL_13A,                E2
+    set_io          IOL_14A_GBIN6,          E3
+    set_io          IOL_14B,                E4
+    //
+    set_io          IOL_22A,                F1
+    set_io          IOL_22B,                F3
+    //
+    set_io          IOL_24B,                G1
+    set_io          IOL_26A,                G2
+    set_io          IOL_24A,                G3
+    //
+    set_io          IOL_26B,                H2
+
+    //  --------    Configuration   ----------------
+
+    set_io          IOB_108_SS,             F7
+    //
+    set_io          IOB_105_SDO,            G6
+    set_io          IOB_107_SCK,            G7
+    //
+    set_io          IOB_106_SDI             H7
